@@ -56,7 +56,7 @@ often do they return to Instacart)?
 
   - Create histograms, bar charts, line charts, scatterplots for different variables and relationships between variables
 
-  - Exporting results to .pkl files and subsets into Microsoft Excel
+  - Exporting results to .pkl files and crosstabs into Microsoft Excel
 
 ![](https://user-images.githubusercontent.com/101165108/157404857-78432359-3535-46e6-8c46-4bc01e31acde.png) 
 ### **Tableau:**  Further Visualization of Results Following Visual Design Standards
