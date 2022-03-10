@@ -1,6 +1,6 @@
 # Instacart Data Analysis Project
 
-![](![Instacart_logo](https://user-images.githubusercontent.com/101165108/157609279-583fc458-1fe8-41aa-ae70-3fee6cb203a3.png))
+![]((https://user-images.githubusercontent.com/101165108/157609279-583fc458-1fe8-41aa-ae70-3fee6cb203a3.png)
 
 ## **Overview and Purpose**
 
@@ -37,7 +37,7 @@ often do they return to Instacart)?
 
 ## **Tools and Skills**
 
-![](![Python_logo](https://user-images.githubusercontent.com/101165108/157611999-2a78835e-5a94-428c-8d19-34583dc132ec.png)) 
+![](https://user-images.githubusercontent.com/101165108/157611999-2a78835e-5a94-428c-8d19-34583dc132ec.png)
 ### **Python:**   Anaconda Data Analysis and Visualizations Following Code Etiquette
 
   - NumPy, pandas, os, Matplotlib, and Seaborn libraries
@@ -91,17 +91,17 @@ With the desired data in hand, I performed consistency checks. This included fin
 
 Once I had wrangled and cleaned the data, it was time to combine/merge them. It was important to wrangle and clean first, as this reduced the size of the final dataframe and increased the likelihood of fully-matched combinations, respectively. The data sets were designed with combination in mind; there were primary and foreign keys present. So, I was well equipped to merge the dataframes. I included an indicator to check for a full match, and a value count of the indicator showed that all observations of each merged dataframe contained data from 'both' dataframes. There were no issues with this step. Nevertheless, it was important to create a single dataframe for the succeeding analyses.
 
-![](![indicator-count](https://user-images.githubusercontent.com/101165108/157616310-24039786-b08f-426b-acce-61ec98b5a4dd.png))
+![](https://user-images.githubusercontent.com/101165108/157616310-24039786-b08f-426b-acce-61ec98b5a4dd.png)
 
 Creating flag columns for user profiles constituted most of the work before generating visualizations. The region column was based off of the observation's state column. The max_order column grouped the dataframe by "user_id" and found the user's max "order_number" (i.e.: this was the number of orders the user had placed). Then, I created a subset of the dataframe that only contained active users, excluding users with less than 5 orders. With this subset, I created several other flag columns: an income flag, which categorized users by their income quartile (relative to other users); an age flag, with young in Q1, middle-aged in Q2 and Q3, and senior in Q4; a dependents flag, classifying users as a parent or non-parent; and a shopping habits flag. Creating the shopping habits flag required several intermediate steps, culminating in a column that gave each user a ratio of food purchases to non-food purchases. I used this ratio, as well as a check for null values in the food purchase and non-food purchase columns, to classify users' shopping habits. Addressing the null values was the most difficult part of user profiling. I was able to use the null values to my advantage, though, by using them to classify users as 'Food only' or 'Non-food only'.
 
-![](![shopping-habits](https://user-images.githubusercontent.com/101165108/157617036-43cf910d-1b87-447e-bcd7-1e9a579069d9.png))
+![](https://user-images.githubusercontent.com/101165108/157617036-43cf910d-1b87-447e-bcd7-1e9a579069d9.png)
 
 With all of the separate user flag columns in place, I used a list comprehension method to effectively concatenate the income, age, dependent, and shopping habits column values for each observation, yielding a profile for each user. Finding a method that could quickly handle the mass of data took experimentation with subsets, but I landed on a list comprehension after just one other method failed to function in a timely manner due to only having 16gb of RAM in my iMac.
 
 Once I had the user profiles, it was time to leverage visualization tools to come up with recommendations for Instacart's requests. Several of the visualizations I could make in Jupyter, using Matplotlib and Seaborn. However, I chose to execute a few more steps in tableau, and then narrow down a few to use in my final report. Because there were 134 (4x3x2x6) profiles, a bar chart in python was inappropriate. To make a tree map, I implemented a similar method for a crosstab of the profiles and regions, with which I made a series of bar charts in Tableau.
 
-![](![profile_valuecount](https://user-images.githubusercontent.com/101165108/157617830-7381e21c-3a3f-4b86-8a9a-12d7c052ea97.png))
+![](https://user-images.githubusercontent.com/101165108/157617830-7381e21c-3a3f-4b86-8a9a-12d7c052ea97.png)
 
 Finally, I rounded out the project with a formatted report in Excel, which contained the population flow of the data, my wrangling steps and consistency checks, details on each derived column, some of my visualizations, and my final recommendations. This was the final derivable to Instacart.
 
@@ -111,4 +111,4 @@ I was able to answer all the questions that Instacart's Stakeholders requested. 
 
 If I were to change anything, I would have expanded what was required in my final project, because I started to discover some other interesting stories from my additional visualizations I made, sifting through the  final dataframe. Also, if this were a real project for a paying role, I would address the 200k null values with a data engineer on the team, my direct report, and anyone else involved. 
 
-View my final Excereport [here](https://coach-courses-us.s3.amazonaws.com/exercises/1054/44753/2ce7ad8426ccf76531020d2587128f01/Data_Imm_3.10_PPT_Cboyd_PDF.pdf)
+View my final Excel report [here](https://coach-courses-us.s3.amazonaws.com/exercises/1054/44753/2ce7ad8426ccf76531020d2587128f01/Data_Imm_3.10_PPT_Cboyd_PDF.pdf)
