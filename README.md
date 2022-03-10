@@ -1,6 +1,6 @@
 # Instacart Data Analysis Project
 
-![]((https://user-images.githubusercontent.com/101165108/157609279-583fc458-1fe8-41aa-ae70-3fee6cb203a3.png)
+![](https://user-images.githubusercontent.com/101165108/157609279-583fc458-1fe8-41aa-ae70-3fee6cb203a3.png)
 
 ## **Overview and Purpose**
 
