@@ -111,4 +111,4 @@ I was able to answer all the questions that Instacart's Stakeholders requested. 
 
 If I were to change anything, I would have expanded what was required in my final project, because I started to discover some other interesting stories from my additional visualizations I made, sifting through the  final dataframe. Also, if this were a real project for a paying role, I would address the 200k null values with a data engineer on the team, my direct report, and anyone else involved. 
 
-View my final Excel report [here](https://coach-courses-us.s3.amazonaws.com/exercises/1054/44753/2ce7ad8426ccf76531020d2587128f01/Data_Imm_3.10_PPT_Cboyd_PDF.pdf)
+Download my final Excel report [here](https://github.com/CBoyd424/Instacart_Python_Project/blob/main/05%20Sent%20to%20client/Data_Imm_4.10_Cboyd.xlsx)
