@@ -33,7 +33,7 @@ departments (21 rows):
 - department_id: department identifier
 - department: the name of the department
 
-order_products__SET (30m+ rows):
+final__dataframe (30m+ rows):
 - order_id: foreign key
 - product_id: foreign key
 - add_to_cart_order: order in which each product was added to cart
